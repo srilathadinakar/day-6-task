@@ -38,6 +38,7 @@ class Movie{
  const movie5 = new Movie("ccc","3-screen","Pg134");
  const movie6 = new Movie("ddd","4-screen");
  const movie7 = new Movie("eee","5-screen");
+ 
 
 
 //2. Circle

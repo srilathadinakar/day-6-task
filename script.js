@@ -33,13 +33,26 @@ class Movie{
  console.log("Title:"+movie2.name,"studio:"+movie2.studio,"rating:"+movie2.rating);
 
 //c.
- const movie3 = new Movie("aaa","1-screen","PG12");
- const movie4 = new Movie("bbb","2-screen");
- const movie5 = new Movie("ccc","3-screen","Pg134");
- const movie6 = new Movie("ddd","4-screen");
- const movie7 = new Movie("eee","5-screen");
+class Movie3{
+    constructor(title,studio,rating){
+         this.title = title;
+         this.studio = studio;
+         this.rating = rating;
+    }
+    static getPG(movies){
+        return movies.filter(movies=>movies.rating==="PG")
+    }
+ }
+ const movies = [
+    new Movie3("aaa","1-screen","PG12"),
+    new Movie3("bbb","2-screen","PG"),
+    new Movie3("ccc","3-screen","Pg134"),
+    new Movie3("ddd","4-screen"),
+    new Movie3("eee","5-screen","PG")
+ ] 
+ const result = Movie3.getPG(movies);
+ console.log(result);
  
-
 
 //2. Circle
 class Circle{
